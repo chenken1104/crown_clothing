@@ -1,5 +1,5 @@
 import styles from './MenuContainer.module.scss'
-import MenuItem from './MenuItem'
+import MenuItem2 from './MenuItem2'
 import {useState} from 'react'
 
 export default function MenuContainer({categories}) {
@@ -8,7 +8,7 @@ export default function MenuContainer({categories}) {
         <div className={styles.homepage}>
             <div className={styles.menuContainer_menu}>
                 {categories.map(({name: title, remote_url: imageUrl, cid, size }) => (
-                    <MenuItem key={cid} title={title} imageUrl={imageUrl} size={size} />
+                    <MenuItem2 key={cid} title={title} imageUrl={imageUrl} size={size} />
                 ))}
             </div>
         </div>

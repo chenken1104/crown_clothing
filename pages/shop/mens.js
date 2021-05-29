@@ -1,8 +1,8 @@
-import Layout from '../components/layout/Layout'
-import MenuContainer from '../components/home/MenuContainer'
+import Layout from '../../components/layout/Layout'
+import MenuContainer from '../../components/home/MenuContainer'
 
 export async function getServerSideProps() {
-  const response = await fetch('https://dry-wave-60207.herokuapp.com/api/categories');
+  const response = await fetch('https://dry-wave-60207.herokuapp.com/api/shop/mens');
   const categories = await response.json();
 
 
