@@ -1,14 +1,16 @@
 import { useStatus } from 'react';
-import Item from './shop_item';
+// import Item from './shop_item';
 import styles from './shop.module.scss';
 import ReactPaginate from 'react-paginate';
 
-export default function ItemContainer({ categories }) {
-    const [pageNumber, setPageNumber]=useStatus(0);
+const Products= ({ products }) => {
+   
+    const [pageNumber, setPageNumber] = useStatus(0);
+
     const itemsPerPage = 10;
     const pagesVisited = pageNumber * itemsPerPage;
 
-    const displayProducts = categories.slice(
+    const displayProducts = products.slice(
         pagesVisited,
         pagesVisited + itemsPerPage
     );
@@ -17,14 +19,13 @@ export default function ItemContainer({ categories }) {
         setPageNumber(selected);
     };
 
-    const pageCount = Math.ceil(categories.length / itemsPerPage);
-
+    const pageCount = Math.ceil(products.length / itemsPerPage);
     return (
         <div>
             <h1 className={styles.homepage}>Shop Page</h1>
           <div className={styles.container}>
               {displayProducts.map(({ name, remote_url, cid, price }) => (
-                  <Item key={cid} name={name} remote_url={remote_url} price={price} />   
+                  <Product key={cid} name={name} remote_url={remote_url} price={price} />   
               ))}
           </div>
           <ReactPaginate
@@ -40,4 +41,5 @@ export default function ItemContainer({ categories }) {
           />
         </div>
     );
-}
+};
+export default Products;
