@@ -25,10 +25,9 @@
     padding: 10px;
     margin: 8px;
     border-radius: 5px;
-    border: 1px solid rgb(236, 15, 15);
-    color: rgb(255, 255, 255);
+    border: 1px solid #000;
+    color: #000;
     cursor: pointer;
-    background-color: blueviolet;
     }
     a:hover{
     color: #ebbe2b;
@@ -38,5 +37,5 @@
     
     .paginationDisabled a {
     color: #fff;
-    background-color: blueviolet;
+    background-color: #145ddb;
     }

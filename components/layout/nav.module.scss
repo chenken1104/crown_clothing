@@ -1,9 +1,9 @@
 /*   color variables */
-$clr-primary: #3e4e81;
-$clr-primary-hover: #b1bfeb;
-$clr-primary-dark: #333e62;
-$clr-gray100: #f9fbff;
-$clr-gray150: #f4f6fb;
+$clr-primary: #813e3e;
+$clr-primary-hover: #ee1fc1;
+$clr-primary-dark: #623333;
+$clr-gray100: #29bcf7;
+$clr-gray150: #f4f5fb;
 $clr-gray200: #eef1f6;
 $clr-gray300: #d1d1d1;
 $clr-gray400: #909090;
@@ -70,6 +70,7 @@ $animation-curve: cubic-bezier(1, 0, 0, 1);
         background: $clr-gray100;
         font-size: 1.2rem;
         z-index: 10;
+        background-color: #29bcf7;;
     
         &__list {
             max-width: 80%;
@@ -135,7 +136,7 @@ $animation-curve: cubic-bezier(1, 0, 0, 1);
                     top: 4rem;
                     left: -1rem;
                     box-shadow: 0 0 10px $clr-gray300;
-                    background-color: white;
+                    background-color: rgb(196, 231, 68);
                     border-radius: $radius;
                     width: 18rem;
                     padding: 1rem;

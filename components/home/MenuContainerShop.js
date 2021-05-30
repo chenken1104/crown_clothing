@@ -3,7 +3,7 @@ import MenuItem2 from './MenuItem2'
 import {useState} from 'react'
 import ReactPaginate from 'react-paginate';//v
 
-export default function MenuContainer({categories}) {
+export default function MenuContainerShop({categories}) {
     // const [sections, setSections] = useState(categories);v
     const [pageNumber, setPageNumber] = useState(0);
 

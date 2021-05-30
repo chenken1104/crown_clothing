@@ -10,5 +10,11 @@
         flex-wrap: wrap;
         justify-content: space-between;
         max-width: 50rem;
+        background-color: rgb(97, 95, 97);
     }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 }

@@ -32,7 +32,9 @@ export default function Nav() {
                             <li><Link href="/shop/mens">Men's</Link></li>
                         </ul>
                     </li>
-                    
+                    <li className={styles.nav__listItem}>
+                        <Link href="/api">API Project</Link>
+                    </li>
                 </ul>
             </nav>
        </div>
